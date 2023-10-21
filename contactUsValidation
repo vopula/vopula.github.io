@@ -1,0 +1,13 @@
+function submit(){
+    var nama = document.getElementById("name").value;
+    var email = document.getElementById("email").value;
+    var noHp = document.getElementById("noHP").value;
+    var kota = document.getElementById("kota").value;
+
+    if ((nama == "") || (email == "") || (noHp == "") || (kota == "")){
+        alert("Mohon isi data dengan penuh");
+        return false;
+    }
+
+    return true
+}
